@@ -10,7 +10,7 @@ public class Person {
     private final Parrot parrot;
 
     // Внедрение зависимости через конструктор
-    // @Autowired - можно и не писать, если только один конструктор
+    // @Autowired - можно не писать, если только один конструктор
     @Autowired
     public Person(Parrot parrot) {
         this.parrot = parrot;

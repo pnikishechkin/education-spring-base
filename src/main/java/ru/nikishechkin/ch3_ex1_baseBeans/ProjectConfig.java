@@ -6,8 +6,11 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
 
 @Configuration
-@ComponentScan(basePackages = "ru.nikishechkin.ch3_ex1_baseBeans") // создать объект Cat (помеченный как @Component)
+// Используя сканирование, будет создан объект Cat, помеченный как @Component
+@ComponentScan(basePackages = "ru.nikishechkin.ch3_ex1_baseBeans")
 public class ProjectConfig {
+
+    // Ручное создание бинов
     @Bean
     Parrot parrot() {
         var p = new Parrot();
