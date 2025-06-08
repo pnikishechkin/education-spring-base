@@ -47,5 +47,6 @@ public class LoggingAspect {
         logger.info("TOLOG: Method will execute");
         Object returnedByMethod = joinPoint.proceed();
         logger.info("TOLOG: Method executed");
+        return returnedByMethod;
     }
 }

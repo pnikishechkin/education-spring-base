@@ -14,5 +14,6 @@ public class Main {
         comment.setAuthor("Peter");
 
         System.out.println(service.publishComment(comment));
+        service.deleteComment(comment);
     }
 }
