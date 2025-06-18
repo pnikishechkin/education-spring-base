@@ -1,4 +1,4 @@
-package ru.nikishechkin.spring_start_here.ch3_ex9_cyclicDependency_objProvider;
+package ru.nikishechkin.spring_start_here.ch3_ex5_cyclicDependency.ex4_setter;
 
 import org.springframework.aop.support.AopUtils;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;

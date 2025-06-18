@@ -1,4 +1,4 @@
-package ru.nikishechkin.spring_start_here.ch3_ex10_cyclicDependency_setter;
+package ru.nikishechkin.spring_start_here.ch3_ex5_cyclicDependency.ex5_postConstruct;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

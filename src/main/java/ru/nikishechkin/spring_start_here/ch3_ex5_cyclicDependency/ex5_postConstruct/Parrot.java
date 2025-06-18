@@ -1,18 +1,15 @@
-package ru.nikishechkin.spring_start_here.ch3_ex7_cyclicDependency_lazy;
+package ru.nikishechkin.spring_start_here.ch3_ex5_cyclicDependency.ex5_postConstruct;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
 public class Parrot {
     private String name = "Parrot default name";
 
-    private final Person person;
+    private Person person;
 
-    @Autowired
-    public Parrot(Person person) {
+    public void setPerson(Person person) {
         this.person = person;
-        System.out.println("Parrot created with Person className: " + person.getClass().getName());
     }
 
     public String getName() {

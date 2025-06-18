@@ -1,4 +1,4 @@
-package ru.nikishechkin.spring_start_here.ch3_ex10_cyclicDependency_setter;
+package ru.nikishechkin.spring_start_here.ch3_ex5_cyclicDependency.ex5_postConstruct;
 
 import org.springframework.aop.support.AopUtils;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
@@ -19,5 +19,7 @@ public class Main {
 
         System.out.println(AopUtils.isAopProxy(parrot.getPerson())); // false
         System.out.println(AopUtils.isAopProxy(person.getParrot())); // false
+
+        System.out.println(parrot.getPerson().getName());
     }
 }

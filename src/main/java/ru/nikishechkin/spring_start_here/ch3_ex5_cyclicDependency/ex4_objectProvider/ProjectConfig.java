@@ -1,8 +1,7 @@
-package ru.nikishechkin.spring_start_here.ch3_ex9_cyclicDependency_objProvider;
+package ru.nikishechkin.spring_start_here.ch3_ex5_cyclicDependency.ex4_objectProvider;
 
 import org.springframework.beans.factory.ObjectProvider;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.DependsOn;
 

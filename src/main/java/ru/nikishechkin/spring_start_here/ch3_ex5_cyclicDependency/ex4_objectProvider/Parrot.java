@@ -1,4 +1,4 @@
-package ru.nikishechkin.spring_start_here.ch3_ex9_cyclicDependency_objProvider;
+package ru.nikishechkin.spring_start_here.ch3_ex5_cyclicDependency.ex4_objectProvider;
 
 import jakarta.annotation.PostConstruct;
 import org.springframework.beans.BeansException;

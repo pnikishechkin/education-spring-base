@@ -1,4 +1,4 @@
-package ru.nikishechkin.spring_start_here.ch3_ex10_cyclicDependency_setter;
+package ru.nikishechkin.spring_start_here.ch3_ex5_cyclicDependency.ex4_setter;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

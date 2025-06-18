@@ -1,4 +1,4 @@
-package ru.nikishechkin.spring_start_here.ch3_ex7_cyclicDependency_lazy;
+package ru.nikishechkin.spring_start_here.ch3_ex5_cyclicDependency.ex2_lazy;
 
 import org.springframework.aop.support.AopUtils;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;

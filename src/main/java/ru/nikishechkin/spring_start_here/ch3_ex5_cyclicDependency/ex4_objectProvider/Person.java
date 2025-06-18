@@ -1,10 +1,9 @@
-package ru.nikishechkin.spring_start_here.ch3_ex9_cyclicDependency_objProvider;
+package ru.nikishechkin.spring_start_here.ch3_ex5_cyclicDependency.ex4_objectProvider;
 
 import jakarta.annotation.PostConstruct;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.ObjectProvider;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Component;
 
 @Component

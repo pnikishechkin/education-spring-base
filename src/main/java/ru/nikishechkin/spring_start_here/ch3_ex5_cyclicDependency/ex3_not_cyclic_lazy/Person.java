@@ -1,4 +1,4 @@
-package ru.nikishechkin.spring_start_here.ch3_ex8_notCyclic_lazy;
+package ru.nikishechkin.spring_start_here.ch3_ex5_cyclicDependency.ex3_not_cyclic_lazy;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Lazy;

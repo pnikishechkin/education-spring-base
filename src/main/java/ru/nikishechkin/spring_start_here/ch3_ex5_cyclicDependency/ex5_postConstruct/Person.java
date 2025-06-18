@@ -1,4 +1,4 @@
-package ru.nikishechkin.spring_start_here.ch3_ex11_cyclicDependency_postConstruct;
+package ru.nikishechkin.spring_start_here.ch3_ex5_cyclicDependency.ex5_postConstruct;
 
 import jakarta.annotation.PostConstruct;
 import org.springframework.beans.factory.annotation.Autowired;
