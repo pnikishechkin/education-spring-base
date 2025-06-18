@@ -1,5 +1,7 @@
 package ru.nikishechkin.spring_start_here.ch3_ex9_cyclicDependency_objProvider;
 
+import jakarta.annotation.PostConstruct;
+import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.ObjectProvider;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Lazy;
@@ -22,6 +24,22 @@ public class Person {
     @Autowired
     public Person(ObjectProvider<Parrot> parrot) {
         this.parrot = parrot;
+        System.out.print("Person constructor | ");
+        try {
+            System.out.println(parrot.getIfAvailable().getClass().getName()); // Parrot еще не инициализирован в контексте
+        } catch (BeansException e) {
+            System.out.println("parrot is not available");
+        }
+    }
+
+    @PostConstruct
+    public void postConstruct() {
+        System.out.print("Person postConstruct | ");
+        try {
+            System.out.println(parrot.getObject().getClass().getName()); // Parrot еще не инициализирован в контексте
+        } catch (BeansException e) {
+            System.out.println("parrot is not available");
+        }
     }
 
     public String getName() {
