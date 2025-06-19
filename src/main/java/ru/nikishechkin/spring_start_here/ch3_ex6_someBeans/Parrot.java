@@ -1,6 +1,6 @@
 package ru.nikishechkin.spring_start_here.ch3_ex6_someBeans;
 
-public class Parrot {
+public class Parrot implements Entity {
     private String name = "Parrot default name";
 
     public Parrot() {

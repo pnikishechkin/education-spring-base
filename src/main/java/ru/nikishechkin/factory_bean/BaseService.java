@@ -6,9 +6,18 @@ import org.springframework.stereotype.Component;
 @Component
 public class BaseService {
     @Autowired
-    private String greeting; // Получаем бин, который будет создан через FactoryBean и выполнится дополнительная логика при создании
+    private final Model model;
+    // Получаем бин, который будет создан через FactoryBean и выполнится дополнительная логика при создании
 
-    public void print() {
-        System.out.println(greeting);
+    public BaseService(Model model) {
+        this.model = model;
+    }
+
+    public void printValue() {
+        System.out.println(model.getValue());
+    }
+
+    public Model getModel() {
+        return model;
     }
 }

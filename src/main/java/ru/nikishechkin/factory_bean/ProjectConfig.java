@@ -4,6 +4,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
+// @ComponentScan(basePackages = "ru.nikishechkin.factory_bean")
 public class ProjectConfig {
     @Bean
     public PrefixStringFactoryBean greeting() {
@@ -14,7 +15,14 @@ public class ProjectConfig {
     }
 
     @Bean
-    public BaseService greetingService() {
-        return new BaseService();
+    public ModelFactory factoryBeanModel() {
+        ModelFactory factory = new ModelFactory();
+        factory.setDelta(3);
+        return factory;
+    }
+
+    @Bean
+    public BaseService greetingService(Model model) {
+        return new BaseService(model);
     }
 }
